@@ -1,0 +1,384 @@
+@font-face {
+    font-family: age;
+    src: url(fonts/Agelast-mLlAm.otf);
+}
+
+@font-face {
+    font-family: space;
+    src: url(fonts/LinlegreyRegular-Oo3O.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* Body Styling */
+body {
+    height: 120vh;
+
+}
+
+/* Header Styling */
+header {
+    background-color: #950c50;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+.energystop {
+    order: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    font-family: age;
+    letter-spacing: 2px;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+
+.braincontrol {
+    order: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-family: age;
+    letter-spacing: 2px;
+    color: yellow;
+}
+
+.coords {
+    order: 3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: age;
+    letter-spacing: 2px;
+}
+
+.moelogo {
+    order: 1;
+    display: flex;
+    height: 400px;
+    margin: auto;
+    margin-bottom: -80px;
+
+}
+
+
+/* All Boxes Styling */
+.box {
+    display: flex;
+}
+
+
+
+
+/*Lookout Box Styling */
+.firstbox {
+    width: 100%;
+    height: 50%;
+}
+
+.centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: age;
+    font-size: 4em;
+    color: whitesmoke;
+    opacity: .60;
+}
+
+/* Text Menu Styling */
+
+.textmenu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #950c50;
+    font-weight: bold;
+}
+
+.box:hover {
+    opacity: 1;
+}
+
+.textbox1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    order: 1;
+    padding: 10px;
+    font-size: 3em;
+    font-family: age;
+    opacity: .50;
+}
+
+.textbox2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    order: 2;
+    padding: 10px;
+    font-size: 3em;
+    font-family: age;
+    opacity: .50;
+}
+
+.textbox3 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    order: 3;
+    padding: 10px;
+    font-size: 3em;
+    font-family: age;
+    opacity: .50;
+}
+
+/* Top Boxes/  Middlebox Styling */
+.within {
+    display: none;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(images/emblem.jpg);
+    background-size: 40%;
+    border-bottom: 1px #950c50 solid;
+}
+
+.topbox1 {
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    order: 1;
+    padding: 40px;
+    font-size: 5em;
+    font-family: age;
+    border-top: 1px #950c50 solid;
+    border-bottom: 1px #950c50 solid;
+}
+
+
+.topbox2 {
+    width: 450px;
+    height: 400px;
+    order: 2;
+    flex-direction: row;
+    border-left: 4px #950c50 solid;
+    border-right: 4px #950c50 solid;
+    border-bottom: 4px #950c50 solid;
+}
+
+.topbox3 {
+    width: 450px;
+    height: 400px;
+    order: 4;
+    flex-direction: row;
+    border-left: 4px #950c50 solid;
+    border-right: 4px #950c50 solid;
+    border-bottom: 4px #950c50 solid;
+}
+
+.topbox4 {
+    width: 450px;
+    height: 400px;
+    order: 3;
+    flex-direction: row;
+    border-left: 4px #950c50 solid;
+    border-right: 4px #950c50 solid;
+    border-bottom: 4px #950c50 solid;
+}
+
+.middlebox {
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    order: 1;
+    padding: 40px;
+    font-size: 5em;
+    font-family: age;
+    border-top: 1px #950c50 solid;
+    border-bottom: 1px #950c50 solid;
+}
+
+.parking {
+    width: 100%;
+    height: 65%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+/* Footer Styling */
+.bottombox {
+    align-items: center;
+    justify-content: center;
+    background-color: #950c50;
+    font-family: age;
+    font-size: 2em;
+    font-style: italic;
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+}
+/* Screen Change at 1632px */
+@media only screen and (max-width: 1632px) {
+    .centered {
+        top: 80%;
+    }
+    .energystop {
+        font-size: 3em;
+    }
+}
+/* Screen Change at 1336px */
+@media only screen and (max-width: 1336px) {
+
+    .smallerscreens {
+        display: flex;
+        justify-content: center;
+        background-image: url(images/emblem.jpg);
+        background-size: contain;
+    }
+
+    .textmenu {
+        flex-direction: column;
+        justify-content: space-around;
+        border-left: 4px black solid;
+        text-decoration: underline;
+
+    }
+    .topbox1 {
+        border-bottom: 3px black solid;
+    }
+    .middlebox {
+        border-top: 5px black solid;
+    }
+    .topmenu {
+        flex-direction: column;
+        background-size: cover;
+    }
+}
+/* Screen Change at 847px */
+@media only screen and (max-width: 847px ) {
+    
+    .smallerscreens {
+        display: flex;
+        flex-direction: column;
+    }
+    .textmenu {
+        display: none;
+    }
+    .within {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        border-left: 1px black solid;
+    }
+    .withinbox1, .withinbox2, .withinbox3 {
+        color: white;
+        font-family: age;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 450px;
+        padding: 10px;
+        font-size: 2em;
+    }
+    .withinbox1 {
+        order: 1;
+    }
+    .withinbox2 {
+        order: 3;
+    }
+    .withinbox3 {
+        order: 5;
+    }
+    .topmenu {
+        align-items: center;
+        background-size: cover;
+    }
+    .topbox1 {
+        border-bottom: 1px #950c50 solid;
+    }
+    .topbox2 {
+        order: 2;
+        border-top: 3px #950c50 solid;
+    }
+    .topbox4 {
+        border-top: 4px #950c50 solid;
+        order: 4;
+    }
+    .topbox3 {
+        border-top: 4px #950c50 solid;
+        order: 6;
+    }
+    .centered {
+        font-size: 2.5em;
+    }
+}
+/* Screen Change at 535px */
+@media only screen and (max-width: 535px) {
+    .topmenu {
+        background-size: cover;
+        order: 3;
+    }
+    .textmenu {
+        display: none;
+    }
+    .energystop {
+        font-size: 2em;
+    }
+    .topbox1 {
+        font-size: 3em;
+    }
+    .topbox2 {
+        border-top: 4px #950c50 solid;
+    }
+    .withinbox1, .withinbox2, .withinbox3 {
+        font-size: 1.5em;
+        color: white;
+    }
+    .brainsmall {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: age;
+    letter-spacing: 2px;
+    order: 2;
+    color: yellow;
+    }
+    .braincontrol {
+        display: none;
+    }
+    .middlebox {
+        font-size: 3em;
+    }
+    .parking {
+        height: 450px;
+    }
+
+}
